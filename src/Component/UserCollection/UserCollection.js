@@ -18,7 +18,9 @@ const UserCollection = () => {
       <h3>Name: {friends.name}</h3>
       <h3>Email: {friends.email}</h3>
       <h3>Phone: {friends.phone}</h3>
-      <h3>Website: {friends.website}</h3>
+      <h3>
+        Company: {friends.company !== undefined ? friends.company.name : ""}
+      </h3>
     </div>
   );
 };
